@@ -75,8 +75,6 @@
 		"@3sixty/validate-locales": "next",
 		"@3sixty/vault-connector-entity-storage": "next",
 		"@3sixty/vault-models": "next",
-		"@3sixty/verifiable-storage-connector-entity-storage": "next",
-		"@3sixty/verifiable-storage-models": "next",
 		"@3sixty/wallet-connector-entity-storage": "next",
 		"@3sixty/wallet-models": "next",
 		"@types/node": "26.6.2",

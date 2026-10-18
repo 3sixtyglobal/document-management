@@ -71,12 +71,6 @@ import {
 	type ITelemetryMetric
 } from "@3sixty/telemetry-models";
 import {
-	EntityStorageVerifiableStorageConnector,
-	initSchema as initSchemaVerifiableStorage,
-	type VerifiableItem
-} from "@3sixty/verifiable-storage-connector-entity-storage";
-import { VerifiableStorageConnectorFactory } from "@3sixty/verifiable-storage-models";
-import {
 	setupTestEnv,
 	TEST_NODE_IDENTITY,
 	TEST_ORGANIZATION_IDENTITY,
@@ -139,7 +133,6 @@ describe("DocumentManagementService - metrics", () => {
 	beforeAll(async () => {
 		await setupTestEnv();
 
-		initSchemaVerifiableStorage();
 		initSchemaImmutableProof();
 		initSchemaNotarization();
 		initSchemaBackgroundTask();
@@ -171,17 +164,6 @@ describe("DocumentManagementService - metrics", () => {
 	});
 
 	beforeEach(async () => {
-		const verifiableItemStorage = new MemoryEntityStorageConnector<VerifiableItem>({
-			entitySchema: nameof<VerifiableItem>(),
-			config: { storageKey: "verifiable-item" }
-		});
-		EntityStorageConnectorFactory.register("verifiable-item", () => verifiableItemStorage);
-
-		VerifiableStorageConnectorFactory.register(
-			"verifiable-storage",
-			() => new EntityStorageVerifiableStorageConnector()
-		);
-
 		const backgroundTaskStorage = new MemoryEntityStorageConnector<BackgroundTask>({
 			entitySchema: "BackgroundTask",
 			config: { storageKey: "background-task" }

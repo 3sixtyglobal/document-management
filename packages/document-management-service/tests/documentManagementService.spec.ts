@@ -70,12 +70,6 @@ import {
 } from "@3sixty/notarization-connector-entity-storage";
 import { NotarizationConnectorFactory } from "@3sixty/notarization-models";
 import { UneceDocumentCodeList } from "@3sixty/standards-unece";
-import {
-	EntityStorageVerifiableStorageConnector,
-	initSchema as initSchemaVerifiableStorage,
-	type VerifiableItem
-} from "@3sixty/verifiable-storage-connector-entity-storage";
-import { VerifiableStorageConnectorFactory } from "@3sixty/verifiable-storage-models";
 import { MimeTypes } from "@3sixty/web";
 import {
 	setupTestEnv,
@@ -86,8 +80,6 @@ import {
 } from "./setupTestEnv.js";
 import { DocumentManagementService } from "../src/documentManagementService.js";
 
-let verifiableItemEntityStorage: MemoryEntityStorageConnector<VerifiableItem>;
-let verifiableStorageConnector: EntityStorageVerifiableStorageConnector;
 let immutableProofEntityStorage: MemoryEntityStorageConnector<ImmutableProof>;
 let immutableProofComponent: ImmutableProofService;
 let nftEntityStorage: MemoryEntityStorageConnector<Nft>;
@@ -130,7 +122,6 @@ describe("document-management-service", async () => {
 	});
 
 	beforeEach(async () => {
-		initSchemaVerifiableStorage();
 		initSchemaImmutableProof();
 		initSchemaNotarization();
 		initSchemaBackgroundTask();
@@ -138,18 +129,6 @@ describe("document-management-service", async () => {
 		initSchemaNft();
 		initSchemaBlobStorage();
 		initSchemaDataProcessing();
-
-		verifiableItemEntityStorage = new MemoryEntityStorageConnector({
-			entitySchema: nameof<VerifiableItem>(),
-			config: { storageKey: "verifiable-item" }
-		});
-		EntityStorageConnectorFactory.register("verifiable-item", () => verifiableItemEntityStorage);
-
-		verifiableStorageConnector = new EntityStorageVerifiableStorageConnector();
-		VerifiableStorageConnectorFactory.register(
-			"verifiable-storage",
-			() => verifiableStorageConnector
-		);
 
 		backgroundTaskStorage = new MemoryEntityStorageConnector<BackgroundTask>({
 			entitySchema: "BackgroundTask",
@@ -306,7 +285,6 @@ describe("document-management-service", async () => {
 	});
 
 	afterEach(async () => {
-		await verifiableItemEntityStorage.teardown();
 		await immutableProofEntityStorage.teardown();
 		await notarizationStorage.teardown();
 		await backgroundTaskStorage.teardown();
