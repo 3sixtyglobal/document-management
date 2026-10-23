@@ -243,10 +243,10 @@ importers:
     dependencies:
       '@3sixty/attestation-models':
         specifier: next
-        version: 0.20.0-next.0
+        version: 0.20.0-next.1
       '@3sixty/auditable-item-graph-models':
         specifier: next
-        version: 0.20.0-next.0
+        version: 0.20.0-next.1
       '@3sixty/blob-storage-models':
         specifier: next
         version: 0.20.0-next.1
@@ -328,7 +328,7 @@ importers:
         version: 0.20.0-next.1
       '@3sixty/auditable-item-graph-models':
         specifier: next
-        version: 0.20.0-next.0
+        version: 0.20.0-next.1
       '@3sixty/core':
         specifier: next
         version: 0.20.0-next.2
@@ -398,10 +398,10 @@ importers:
         version: 0.20.0-next.1
       '@3sixty/attestation-models':
         specifier: next
-        version: 0.20.0-next.0
+        version: 0.20.0-next.1
       '@3sixty/auditable-item-graph-models':
         specifier: next
-        version: 0.20.0-next.0
+        version: 0.20.0-next.1
       '@3sixty/blob-storage-models':
         specifier: next
         version: 0.20.0-next.1
@@ -447,13 +447,13 @@ importers:
         version: 0.20.0-next.1
       '@3sixty/attestation-connector-nft':
         specifier: next
-        version: 0.20.0-next.0
+        version: 0.20.0-next.1
       '@3sixty/attestation-service':
         specifier: next
-        version: 0.20.0-next.0
+        version: 0.20.0-next.1
       '@3sixty/auditable-item-graph-service':
         specifier: next
-        version: 0.20.0-next.0
+        version: 0.20.0-next.1
       '@3sixty/background-task-models':
         specifier: next
         version: 0.20.0-next.1
@@ -577,24 +577,24 @@ packages:
     resolution: {integrity: sha512-KKFguJ2wC6o1BOkuIoKbBwMck2D2T/Xil61gi++CFtMdcSS2tMbkvYpGYkngrpSwwnaGwtihAJ+UDO7DbjYSyA==}
     engines: {node: '>=24.0.0'}
 
-  '@3sixty/attestation-connector-nft@0.20.0-next.0':
-    resolution: {integrity: sha512-fR2uOECGAOpHStw4Z5+5VNQ5NUSdk4zNDtDP5u7aUlcInmWk4sM+IZ1P9soQC1UGCg2PF7+O75OM3Cyw3fvVwQ==}
+  '@3sixty/attestation-connector-nft@0.20.0-next.1':
+    resolution: {integrity: sha512-aPhByDgQ8yJXiNWk2Yr32NzNxIAtseSMpSHTsaA0ufUFcN9FNe/PWODxFpv2IOPNd2hRfDeecltYC2hwAZ/7gw==}
     engines: {node: '>=24.0.0'}
 
-  '@3sixty/attestation-models@0.20.0-next.0':
-    resolution: {integrity: sha512-30A7QHitq9VVvhHwnHYwwG3ozoGVleOFvua/i2GGssP6fJZK8Dmb1CvH9mrCyiONyVZ1RudzCLG+31cz9UseFg==}
+  '@3sixty/attestation-models@0.20.0-next.1':
+    resolution: {integrity: sha512-FHH6RBuzuw9/bf2WXo14/NaXK+4SixNCubGdc261E6CNJEv8twoPvG7LIdO91rUyHUkQxk75qJ+dz8ubyvRysA==}
     engines: {node: '>=24.0.0'}
 
-  '@3sixty/attestation-service@0.20.0-next.0':
-    resolution: {integrity: sha512-1UVHLp7D16CxJYGyPy/OCmnLoEPbiPOqM32updugs5TYt2ax5C2/3ZZ52RUoYLXuzsNUwNyISiNGvN3Tf2eO+g==}
+  '@3sixty/attestation-service@0.20.0-next.1':
+    resolution: {integrity: sha512-HtFQYjjUOpGAwNwO2yCxegQQCDRoWEt+UD4/w5deT2dab/JfkjLfkn0ACVfRU/j5c5eznZcUlQG1G8rxG/oFww==}
     engines: {node: '>=24.0.0'}
 
-  '@3sixty/auditable-item-graph-models@0.20.0-next.0':
-    resolution: {integrity: sha512-+48s2UgzTUgweaUcb5CWj29lZ23gPPb+CLSu8oq8s/HAecFdEXoSOSavYbwuNn62pt7p2Lrh6nQSzZ8K8TdBlA==}
+  '@3sixty/auditable-item-graph-models@0.20.0-next.1':
+    resolution: {integrity: sha512-U2ab/QU+XBAg84NiONIBgMXC+COXYsn/VqHtTS3yFf6uU1hX49jiqWw2lH3gRlr/KGseaQ0l5Bo3/K9/s1xcaQ==}
     engines: {node: '>=24.0.0'}
 
-  '@3sixty/auditable-item-graph-service@0.20.0-next.0':
-    resolution: {integrity: sha512-AcXVhg2dYIZzKy8WQj4kojyFrqwO0mZGryuwDSpZgncalBG/nHWqRDjSleRqde06ONfVDulmqnWkQXsPKAaX8g==}
+  '@3sixty/auditable-item-graph-service@0.20.0-next.1':
+    resolution: {integrity: sha512-bJM2vyKEfT/l0zWx7walKAlwoTdGE//vwUwKB7Uj0pSUtRNbz7+1hIn0pmCIboXcFI7fYmK5tpmGS5Ve7W7GUw==}
     engines: {node: '>=24.0.0'}
 
   '@3sixty/background-task-models@0.20.0-next.1':
@@ -4058,9 +4058,9 @@ snapshots:
       '@3sixty/vault-models': 0.20.0-next.1
       '@3sixty/web': 0.20.0-next.2
 
-  '@3sixty/attestation-connector-nft@0.20.0-next.0':
+  '@3sixty/attestation-connector-nft@0.20.0-next.1':
     dependencies:
-      '@3sixty/attestation-models': 0.20.0-next.0
+      '@3sixty/attestation-models': 0.20.0-next.1
       '@3sixty/core': 0.20.0-next.2
       '@3sixty/data-json-ld': 0.20.0-next.3
       '@3sixty/entity': 0.20.0-next.2
@@ -4070,7 +4070,7 @@ snapshots:
       '@3sixty/standards-schema-org': 0.20.0-next.2
       '@3sixty/standards-w3c-did': 0.20.0-next.2
 
-  '@3sixty/attestation-models@0.20.0-next.0':
+  '@3sixty/attestation-models@0.20.0-next.1':
     dependencies:
       '@3sixty/core': 0.20.0-next.2
       '@3sixty/data-core': 0.20.0-next.3
@@ -4082,10 +4082,10 @@ snapshots:
       '@3sixty/telemetry-models': 0.20.0-next.1
       '@3sixty/web': 0.20.0-next.2
 
-  '@3sixty/attestation-service@0.20.0-next.0':
+  '@3sixty/attestation-service@0.20.0-next.1':
     dependencies:
       '@3sixty/api-models': 0.20.0-next.1
-      '@3sixty/attestation-models': 0.20.0-next.0
+      '@3sixty/attestation-models': 0.20.0-next.1
       '@3sixty/context': 0.20.0-next.2
       '@3sixty/core': 0.20.0-next.2
       '@3sixty/data-json-ld': 0.20.0-next.3
@@ -4096,7 +4096,7 @@ snapshots:
       '@3sixty/wallet-models': 0.20.0-next.1
       '@3sixty/web': 0.20.0-next.2
 
-  '@3sixty/auditable-item-graph-models@0.20.0-next.0':
+  '@3sixty/auditable-item-graph-models@0.20.0-next.1':
     dependencies:
       '@3sixty/core': 0.20.0-next.2
       '@3sixty/data-core': 0.20.0-next.3
@@ -4108,10 +4108,10 @@ snapshots:
       '@3sixty/telemetry-models': 0.20.0-next.1
       '@3sixty/web': 0.20.0-next.2
 
-  '@3sixty/auditable-item-graph-service@0.20.0-next.0':
+  '@3sixty/auditable-item-graph-service@0.20.0-next.1':
     dependencies:
       '@3sixty/api-models': 0.20.0-next.1
-      '@3sixty/auditable-item-graph-models': 0.20.0-next.0
+      '@3sixty/auditable-item-graph-models': 0.20.0-next.1
       '@3sixty/context': 0.20.0-next.2
       '@3sixty/core': 0.20.0-next.2
       '@3sixty/crypto': 0.20.0-next.2
