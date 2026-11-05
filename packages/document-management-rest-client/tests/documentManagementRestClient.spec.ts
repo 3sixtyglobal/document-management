@@ -17,7 +17,7 @@ import type {
 import { DocumentContexts, DocumentTypes } from "@3sixty/document-management-models";
 import { SchemaOrgContexts, SchemaOrgTypes } from "@3sixty/standards-schema-org";
 import { UneceDocumentCodeList } from "@3sixty/standards-unece";
-import { HttpMethod } from "@3sixty/web";
+import { HttpMethod, MimeTypes } from "@3sixty/web";
 import { DocumentManagementRestClient } from "../src/documentManagementRestClient.js";
 import {
 	createdResponse,
@@ -248,7 +248,7 @@ describe("DocumentManagementRestClient", () => {
 				ok: true,
 				status: 200,
 				headers: new Headers({
-					"content-type": "application/json",
+					"content-type": MimeTypes.Json,
 					link: `<${ENDPOINT}/${PREFIX}/${DOC_URN}?cursor=page2>; rel="next"`
 				}),
 				json: async () => TEST_DOCUMENT_LIST
@@ -421,7 +421,7 @@ describe("DocumentManagementRestClient", () => {
 				ok: true,
 				status: 200,
 				headers: new Headers({
-					"content-type": "application/json",
+					"content-type": MimeTypes.Json,
 					link: `<${ENDPOINT}/${PREFIX}?cursor=page2>; rel="next"`
 				}),
 				json: async () => TEST_VERTEX_LIST

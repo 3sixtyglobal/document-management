@@ -4,7 +4,6 @@
 /**
  * Metric IDs for the document management service.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DocumentManagementMetricIds = {
 	/**
 	 * Number of documents created.

@@ -380,7 +380,9 @@ export class DocumentManagementService
 						id: vertexId,
 						resourcePatches: { remove: [currentRevision.id] }
 					});
-				} catch {}
+				} catch {
+					// The revision may already have been removed.
+				}
 				throw new NotFoundError(
 					DocumentManagementService.CLASS_NAME,
 					"connectedVertexNotFound",
@@ -1311,7 +1313,9 @@ export class DocumentManagementService
 			if (Is.stringValue(metadataIdentifier) && metadataIdentifier === correlationId) {
 				try {
 					await this._blobStorageComponent.remove(blobStorageId);
-				} catch {}
+				} catch {
+					// The blob may already have been removed.
+				}
 			}
 		} catch {
 			// Best-effort cleanup only.

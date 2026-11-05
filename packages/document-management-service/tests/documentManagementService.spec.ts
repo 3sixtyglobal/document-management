@@ -325,7 +325,7 @@ describe("document-management-service", async () => {
 			blobSize: 11,
 			integrity: "sha256-pZGm1Av0IEBKARczz7exkNYsZb8LzaMrV7J32a2fFG4=",
 			dateCreated: "2024-08-22T04:13:20.000Z",
-			encodingFormat: "text/plain",
+			encodingFormat: MimeTypes.PlainText,
 			fileExtension: "txt",
 			id: "blob:memory:a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e",
 			isEncrypted: false,
@@ -435,7 +435,7 @@ describe("document-management-service", async () => {
 			blobSize: 11,
 			integrity: "sha256-pZGm1Av0IEBKARczz7exkNYsZb8LzaMrV7J32a2fFG4=",
 			dateCreated: "2024-08-22T04:13:20.000Z",
-			encodingFormat: "text/plain",
+			encodingFormat: MimeTypes.PlainText,
 			fileExtension: "txt",
 			id: "blob:memory:a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e",
 			isEncrypted: false,
@@ -1123,7 +1123,7 @@ describe("document-management-service", async () => {
 						blobSize: 11,
 						integrity: "sha256-pZGm1Av0IEBKARczz7exkNYsZb8LzaMrV7J32a2fFG4=",
 						dateCreated: "2024-08-22T04:13:20.000Z",
-						encodingFormat: "text/plain",
+						encodingFormat: MimeTypes.PlainText,
 						fileExtension: "txt",
 						metadata: {
 							identifier: expect.any(String)
@@ -1188,7 +1188,7 @@ describe("document-management-service", async () => {
 						blobSize: 11,
 						integrity: "sha256-pZGm1Av0IEBKARczz7exkNYsZb8LzaMrV7J32a2fFG4=",
 						dateCreated: "2024-08-22T04:13:20.000Z",
-						encodingFormat: "text/plain",
+						encodingFormat: MimeTypes.PlainText,
 						fileExtension: "txt",
 						metadata: {
 							identifier: expect.any(String)
@@ -1271,7 +1271,7 @@ describe("document-management-service", async () => {
 						type: "BlobStorageEntry",
 						blob: "SGVsbG8gV29ybGQ=",
 						dateCreated: "2024-08-22T04:13:20.000Z",
-						encodingFormat: "text/plain",
+						encodingFormat: MimeTypes.PlainText,
 						blobSize: 11,
 						fileExtension: "txt",
 						integrity: "sha256-pZGm1Av0IEBKARczz7exkNYsZb8LzaMrV7J32a2fFG4=",

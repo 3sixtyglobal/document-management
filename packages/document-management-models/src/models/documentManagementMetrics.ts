@@ -6,7 +6,6 @@ import { DocumentManagementMetricIds } from "./documentManagementMetricIds.js";
 /**
  * Metrics registered by the document management service.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DocumentManagementMetrics: ITelemetryMetric[] = [
 	{
 		id: DocumentManagementMetricIds.DocumentsCreated,

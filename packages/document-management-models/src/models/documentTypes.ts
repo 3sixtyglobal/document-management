@@ -4,7 +4,6 @@
 /**
  * The types of document management objects.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DocumentTypes = {
 	/**
 	 * Represents a document.

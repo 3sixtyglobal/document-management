@@ -70,6 +70,7 @@ import {
 	type ITelemetryComponent,
 	type ITelemetryMetric
 } from "@3sixty/telemetry-models";
+import { MimeTypes } from "@3sixty/web";
 import {
 	setupTestEnv,
 	TEST_NODE_IDENTITY,
@@ -270,7 +271,7 @@ describe("DocumentManagementService - metrics", () => {
 		);
 
 		DataExtractorConnectorFactory.register("json-path", () => new JsonPathExtractorConnector());
-		DataConverterConnectorFactory.register("application/json", () => new JsonConverterConnector());
+		DataConverterConnectorFactory.register(MimeTypes.Json, () => new JsonConverterConnector());
 
 		const dataProcessingService = new DataProcessingService();
 		ComponentFactory.register("data-processing", () => dataProcessingService);

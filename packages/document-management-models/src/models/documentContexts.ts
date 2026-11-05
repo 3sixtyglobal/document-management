@@ -4,7 +4,6 @@
 /**
  * The contexts of document management objects.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DocumentContexts = {
 	/**
 	 * The canonical RDF namespace URI for Document Management.
